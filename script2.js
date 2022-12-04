@@ -1,21 +1,45 @@
 'use strict';
 
-const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+//if,else if, else
 
-const personalMovieDB = {
-	count: numberOfFilms,
-	movies: {},
-	actors: {},
-	genres: [],
-	privat: false
-};
+// if (4==9) {
+// 	console.log('ok!');
+// } else {
+// 	console.log('Error');
+// }
 
-const a = prompt('Один из последних просмотренных фильмов?', ''),
-		b = prompt('На сколько оцените его', ''),
-		c = prompt('Один из последних просмотренных фильмов?', ''),
-		d = prompt('На сколько оцените его', '');
+// const num = 50;
+// if (num < 49) {
+// 	console.log('Ошибка');
+// } else if (num > 100) {
+// 	console.log('Много');
+// } else (
+// 	console.log('Ok!')
+// );
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
+// (num === 50) ? console.log('Ok') : console.log('Error');
 
-console.log(personalMovieDB);
+// const num = 50;
+// switch (num) {
+// 	case 49:
+// 		console.log('Неверно');
+// 		break;
+// 	case 100:
+// 		console.log('Неверно');
+// 		break;
+// 	case 51:
+// 		console.log('В точку!');
+// 		break;
+// 	default:
+// 		console.log('Не в этот раз');
+// 		break;
+// }
+
+const hamburger = 5;
+const fries = 0;
+
+if (hamburger && fries) {
+	console.log('Я сыт');
+}
+
+console.log((hamburger && fries));
